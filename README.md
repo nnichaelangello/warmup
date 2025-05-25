@@ -14,11 +14,15 @@ Kompetisi ini menantang peserta untuk memprediksi jumlah sampah harian yang diha
 2. Fitur mana yang memiliki pengaruh dominan terhadap produksi sampah, dan bagaimana hubungan antar fitur dapat dioptimalkan untuk meningkatkan performa model?
 3. Bagaimana solusi teknis yang dikembangkan dapat diterjemahkan menjadi strategi praktis untuk mendukung pengelolaan sampah dalam konteks kota cerdas?
 
-Penilaian dilakukan secara otomatis melalui platform Kaggle berdasarkan akurasi prediksi pada data pengujian, menggunakan metrik *Root Mean Squared Error* (RMSE). Peserta diharapkan menunjukkan kemampuan analisis mendalam, kreativitas dalam pengolahan data, dan pemahaman konteks untuk menghasilkan solusi yang kompetitif dan relevan.
+Penilaian dilakukan secara otomatis melalui platform Kaggle berdasarkan akurasi prediksi pada data pengujian, menggunakan metrik *Root Mean Squared Error* (RMSE). 
+
+$$\text{RMSE} = \sqrt{\frac{1}{n} \sum_{i=1}^{n} (y_i - \hat{y}_i)^2}$$
+
+Peserta diharapkan menunjukkan kemampuan analisis mendalam, kreativitas dalam pengolahan data, dan pemahaman konteks untuk menghasilkan solusi yang kompetitif dan relevan.
 
 ## Informasi Dataset
 
-Dataset yang disediakan terdiri dari tiga file CSV yang merepresentasikan skenario pengelolaan sampah di sebuah kota fiktif: `demographic_data.csv`, `commercial_activity_data.csv`, `weather_data.csv`, dan `waste_production.csv` (untuk pelatihan) serta `test.csv` (untuk pengujian). Dataset ini dirancang untuk menantang peserta dalam mengidentifikasi pola, hubungan antar variabel, dan fitur yang relevan secara mandiri. Berikut adalah rincian masing-masing dataset beserta kolomnya:
+Dataset yang disediakan terdiri dari beberapa file CSV yang merepresentasikan skenario pengelolaan sampah di sebuah kota fiktif: `demographic_data.csv`, `commercial_activity_data.csv`, `weather_data.csv`, dan `waste_production.csv` (untuk pelatihan) serta `test.csv` (untuk pengujian). Dataset ini dirancang untuk menantang peserta dalam mengidentifikasi pola, hubungan antar variabel, dan fitur yang relevan secara mandiri. Berikut adalah rincian masing-masing dataset beserta kolomnya:
 
 ### 1. Data Demografi (`demographic_data.csv`)
 
